@@ -1,14 +1,14 @@
 // So typescript treats this as a module
 export {};
 
-const inlineArrow: (props: {bar: boolean; baz: boolean; foo: boolean}) => null = ({...props}) => null;
+const inlineArrow: (props: {bar: boolean; baz: boolean; foo: boolean;}) => null = ({...props}) => null;
 
-const inlineArrow2: (props: {bar: boolean; baz: boolean; foo: boolean}) => null = ({...props}) => null;
+const inlineArrow2: (props: {bar: boolean; baz: boolean; foo: boolean;}) => null = ({...props}) => null;
 
 const inlineWeird: (props: {          bar: boolean,baz: boolean,
           foo: boolean;}) => null = ({...props}) => null;
 
-function inlineGeneric<T extends { bar: boolean; baz: boolean; foo: boolean}>({...props}: T | {bar: boolean; baz: boolean; foo: boolean}) {
+function inlineGeneric<T extends { bar: boolean; baz: boolean; foo: boolean;}>({...props}: T | {bar: boolean; baz: boolean; foo: boolean;}) {
    return null
 }
 
